@@ -26,11 +26,12 @@ This is installed by using your local command line interface with inquire and je
 ## Usage
 To use this application you would download the required software, nmp i inquire@8.2.4 and jest. then run the function with npm run start. Once that is done the prompts will beggin and once finished will generate a styled HTML site for you. 
 
-![image](assets\livesite-view.jpg)
+
+![livesite-view](https://user-images.githubusercontent.com/112592440/195460665-1a3d4738-d4b5-46e5-ad03-ddba9cf2e48e.jpg)
 
 
 
-[Watch Builing README](assets\Walkthroughvideo.webm)
+[Watch Builing README](https://drive.google.com/file/d/1fr3PnGfCTH22NLVzFrWhtWBfyCuLAB4d/view)
     
 ## Features
 Utilized: "https://www.flaticon.com/free-icons/web-development" 
