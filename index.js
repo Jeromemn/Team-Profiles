@@ -95,6 +95,8 @@ function promptAddTeamMember() {
   });
 }
 
+// used to call functions with prompts when needed, push to employees array for manager, engineer and intern
+// calls functions and uses await to wait for the responses before processing next line of code
 async function init() {
   const employees = [];
   const managerInfo = await promptManagerQuestions();
@@ -102,7 +104,8 @@ async function init() {
   console.log(managerInfo);
 
   let addTeamMember;
-
+// while Generate my site is not selected continue to ask if want to add engineer/ intern. then prompt array for each option, await to wait for all prompts to finish before executing next line of code
+// pushing to employees array for engineer and intern
   while (addTeamMember !== "Generate my site") {
     addTeamMember = await promptAddTeamMember();
     if (addTeamMember === "Engineer") {
@@ -117,14 +120,12 @@ async function init() {
   console.log(employees);
   generateUI(employees);
   // while addTeamMember is not equal to 'Generate my site'
-  // prompt add question
+  // prompt add teammember question
   // if engineer, prompt engineer questions
   // if intern, prompt intern question
   // push into employees array
-  // ask add question
+  // ask add teammember question
 
-  // const engineerInfo = await promptEngineerQuestions();
-  // console.log(engineerInfo);
 }
 
 init();

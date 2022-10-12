@@ -4,6 +4,9 @@ const Manager = require("./lib/Manager");
 function generateUI(employees) {
   //  for each employee create a card in html
   //  display employee information on card
+  // use join to remove commas
+  // designate specific traits using get role, images, officenumber, github and school
+  // if does not apply to that role leave blank :""
   console.log(employees);
   const employeeCards = employees
     .map((employee) => {
@@ -91,7 +94,7 @@ function generateUI(employees) {
     `;
 
   fs.writeFile("index.html", template, (err) =>
-    err ? console.log(err) : console.log("Successfully Created README!")
+    err ? console.log(err) : console.log("Successfully Created Team!")
   );
 }
 
