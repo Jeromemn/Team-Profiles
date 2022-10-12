@@ -1,4 +1,5 @@
 const fs = require("fs");
+const Manager = require("./lib/Manager");
 
 function generateUI(employees) {
   //  for each employee create a card in html
@@ -10,14 +11,26 @@ function generateUI(employees) {
     <div class="cell small-4">
     <div class="card-user-container">
   
-    <div class="card-user-avatar">
-        <img src="https://placehold.it/200x200" alt="" class="user-image">
-    </div>
+    ${employee.getRole() === "Manager"
+    ? `<div class="card-user-avatar">
+        <img src="assets/businessman.png" alt="manager-image" class="user-image">
+    </div>` :""
+    }
+    ${employee.getRole() === "Engineer"
+    ? `<div class="card-user-avatar">
+        <img src="assets/coding.png" alt="engineer-image" class="user-image">
+    </div>` :""
+    }
+    ${employee.getRole() === "Intern"
+    ? `<div class="card-user-avatar">
+        <img src="assets/graduated.png" alt="intern-image" class="user-image">
+    </div>` :""
+    }
 
 
   <div class="card-user-bio">
     <h4>${employee.getName()}</h4>
-    <h6> ${employee.getRole()}</h6>
+    <h5> ${employee.getRole()}</h5>
     <p>Id: ${employee.getId()} </p>
     <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()} </a></p>
     ${
@@ -53,6 +66,7 @@ function generateUI(employees) {
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+            <link rel="stylesheet" href="style.css">
             <title>A team profile</title>
         </head>
         <body>
@@ -64,6 +78,11 @@ function generateUI(employees) {
         </div>
         </div>    
         </body>
+        <footer>
+        <a href="https://www.flaticon.com/free-icons/web-development" title="web development icons">Web development icons created by surang - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/businessman" title="businessman icons">Businessman icons created by Gregor Cresnar - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/student" title="student icons">Student icons created by Freepik - Flaticon</a>
+      </footer>
         </html>
     `;
 
