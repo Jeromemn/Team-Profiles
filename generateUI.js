@@ -70,7 +70,9 @@ function generateUI(employees) {
             <title>A team profile</title>
         </head>
         <body>
-        <header> The A Team </header>
+        <header id="header"> 
+        <h1 id="h1">The A Team </h1>
+        </header>
         <div class="grid-container">
          <div class="grid-x grid-margin-x">
             ${employeeCards}
@@ -78,6 +80,8 @@ function generateUI(employees) {
         </div>
         </div>    
         </body>
+        <br>
+        <br>
         <footer>
         <a href="https://www.flaticon.com/free-icons/web-development" title="web development icons">Web development icons created by surang - Flaticon</a>
         <a href="https://www.flaticon.com/free-icons/businessman" title="businessman icons">Businessman icons created by Gregor Cresnar - Flaticon</a>
