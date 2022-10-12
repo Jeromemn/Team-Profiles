@@ -79,6 +79,8 @@ function promptInternQuestions() {
     ]);
   }
 
+  // creates prompt to identify if a new teammate should be added and if so what type,
+  // for engineer/ intern that employees questions prompt, for Generate my site call generateUi
 function promptAddTeamMember() {
   return inquirer.prompt([
     {
