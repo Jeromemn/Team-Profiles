@@ -33,7 +33,7 @@ To use this application you would download the required software, nmp i inquire@
 [browserview.webm](https://user-images.githubusercontent.com/112592440/195460869-da59e5d0-260b-4820-9a5f-23268b6d80b7.webm)
 
 
-[Watch Builing README](https://drive.google.com/file/d/1fr3PnGfCTH22NLVzFrWhtWBfyCuLAB4d/view)
+[Watch Builing Team Profiles!](https://drive.google.com/file/d/1fr3PnGfCTH22NLVzFrWhtWBfyCuLAB4d/view)
     
 ## Features
 Utilized: "https://www.flaticon.com/free-icons/web-development" 
